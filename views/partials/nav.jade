@@ -1,0 +1,18 @@
+.subnav
+	.nav-content(layout="row" layout-xs="column" layout-align="space-around center")
+		.mail
+			md-icon mail_outline
+			h3 German@reyesreyesabogado.com
+		.telefono
+			md-icon call
+			h3 52 1 33 1554 6419
+		.ubicacion
+			md-icon place
+			h3 Torre WTC #244, DF, México
+.nav(layout="row" layout-align="center center")
+	.nav-content(layout="row")
+		.button-content
+			md-button(ui-sref="servicios" ui-sref-active="active") Servicios
+		md-icon.logo(md-svg-icon="img/logo.svg" ui-sref="home" ng-init="hover = false"  ng-mouseover="hover = true" ng-mouseleave="hover = false"  ng-class="hover ? 'conHover' : 'sinHover'")
+		.button-content
+			md-button(ui-sref="nosotros" ui-sref-active="active") Nosotros

@@ -1,0 +1,42 @@
+.topicos-container
+    .topicos
+        md-card(layout="column")
+            .buscar(layout="row")
+                md-autocomplete(
+                flex
+                md-selected-item="ctrl.selectedTopico" 
+                md-search-text-change="ctrl.BuscarTopicoChange(ctrl.searchTextTopico)" 
+                md-search-text="ctrl.searchTextTopico" 
+                md-selected-item-change="ctrl.TopicoSeleccionadoChange(item)" 
+                md-items="item in topicos" 
+                md-item-text="item.nombre" 
+                md-min-length="0" 
+                placeholder="Seleccionar Topico" 
+                md-menu-class="autocomplete-custom-template"
+                required)
+                    md-item-template
+                        span {{item.nombre}}
+                md-autocomplete(
+                flex
+                md-selected-item="ctrl.selectedServicio" 
+                md-search-text-change="ctrl.BuscarServicioChange(ctrl.searchTextServicio)" 
+                md-search-text="ctrl.searchTextServicio" 
+                md-selected-item-change="ctrl.ServicioSeleccionadoChange(item)" 
+                md-items="item in servicios" 
+                md-item-text="item.nombre" 
+                md-min-length="0" 
+                placeholder="Seleccionar una Servicio" 
+                md-menu-class="autocomplete-custom-template"
+                required)
+                    md-item-template
+                        span {{item.nombre}}
+            md-list
+                md-list-item(ng-repeat="topico in topicos | filter: ctrl.searchTextTopico" ng-init="hover = false"  ng-mouseover="hover = true" ng-mouseleave="hover = false"  ng-class="hover ? 'conHover' : 'sinHover'" ng-click="avanzar(topico)")
+                    .md-list-item-text
+                        strong {{topico.nombre}}
+                    .md-secondary(ng-show="hover")
+                        .icon
+                            md-icon send
+                    md-divider
+        md-card
+            cl-paging(cl-pages="paging.total" cl-steps="6" cl-page-changed="paging.onPageChanged()" cl-align="start start" cl-current-page="paging.current")

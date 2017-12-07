@@ -1,0 +1,11 @@
+.home(layout="row")
+	.home-container(flex="70")
+		//- md-card(layout="row")
+		//- 	md-button(ui-sref="home.topico") Topicos
+		//- 	md-button(ui-sref="home.prospecto") Prospectos
+		//- 	md-button(ui-sref="home.respuesta") Respuesta
+		md-card(layout="row" ng-show="prospecto")
+			md-button(ui-sref="home.topico" style="display:flex")
+				md-icon(style="margin:auto") keyboard_arrow_left
+			h4 Bienvenido {{prospecto.nombre}}, ahora puedes acceder a todas las respuestas.
+		main.page(ui-view="main")

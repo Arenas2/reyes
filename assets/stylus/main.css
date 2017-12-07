@@ -1,0 +1,231 @@
+ui-gmap-google-map {
+  height: 100%;
+  width: 400px;
+}
+ui-gmap-google-map .angular-google-map {
+  width: 100%;
+  height: 400px;
+}
+ui-gmap-google-map .angular-google-map .angular-google-map-container {
+  height: 400px;
+  width: 100%;
+}
+.ng-hide-add.ng-hide-add-active {
+  -webkit-animation: fadeOut 500ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  animation: fadeOut 500ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  -webkit-transition: all all cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: all all cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -webkit-transition-delay: 500ms ease-in-out;
+  transition-delay: 500ms ease-in-out;
+}
+.ng-hide-remove.ng-hide-remove-active {
+  -webkit-animation: fadeIn 500ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  animation: fadeIn 500ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  -webkit-transition: all all cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: all all cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -webkit-transition-delay: 500ms ease-in-out;
+  transition-delay: 500ms ease-in-out;
+}
+.page.ng-enter {
+  -webkit-animation: bounceInUp 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  animation: bounceInUp 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -webkit-transition: all all cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: all all cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -webkit-transition-delay: 1s ease-in-out;
+  transition-delay: 1s ease-in-out;
+}
+.page.ng-leave {
+  -webkit-animation: fadeOut 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  animation: fadeOut 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -webkit-transition: all all cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: all all cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -webkit-transition-delay: 1s ease-in-out;
+  transition-delay: 1s ease-in-out;
+}
+main {
+  position: absolute;
+}
+@media (min-width: 960px) {
+  main {
+    width: 90%;
+  }
+}
+@media (max-width: 600px) {
+  main {
+    width: 100%;
+  }
+}
+header .subnav {
+  background-color: #000;
+}
+header .subnav div {
+  display: flex;
+}
+header .subnav div h3 {
+  color: #fff;
+}
+header .subnav div md-icon {
+  color: #deb887;
+  margin-right: 5px;
+}
+header .nav {
+  width: 100%;
+  margin-top: 10px;
+}
+header .nav .nav-content md-icon.logo {
+  height: 100px;
+  width: 100px;
+  color: #fff;
+  cursor: pointer;
+}
+header .nav .nav-content md-icon.logo.conHover {
+  transform: scale(0.9);
+  -webkit-transition: all 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: all 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -webkit-transition-delay: 0 ease-in-out;
+  transition-delay: 0 ease-in-out;
+}
+header .nav .nav-content .button-content {
+  height: 100px;
+  display: flex;
+}
+header .nav .nav-content .button-content .md-button {
+  margin: auto;
+  color: #fff;
+}
+header .nav .nav-content .button-content .md-button.active {
+  background-color: #fff;
+  color: #000;
+}
+.principal {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 500ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: all 500ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -webkit-transition-delay: 0 ease-in-out;
+  transition-delay: 0 ease-in-out;
+}
+.servicios .servicios-content md-grid-list {
+  margin-top: 50px;
+}
+.servicios .servicios-content md-grid-list md-grid-tile {
+  cursor: pointer;
+  -webkit-transition: all 500ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: all 500ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -webkit-transition-delay: 0 ease-in-out;
+  transition-delay: 0 ease-in-out;
+}
+.servicios .servicios-content md-grid-list md-grid-tile.sinHover {
+  background-color: #deb887;
+}
+.servicios .servicios-content md-grid-list md-grid-tile.conHover {
+  background-color: #5d4329;
+  transform: scale(0.9);
+}
+.servicios .servicios-content md-grid-list md-grid-tile md-icon {
+  color: #fff;
+  height: 60px;
+  width: 60px;
+}
+.servicios .servicios-content md-grid-list md-grid-tile md-grid-tile-footer h2 {
+  margin-left: 30px;
+}
+.home {
+  min-height: calc(100vh - 270px);
+}
+.home .home-container {
+  width: 70%;
+}
+@media (min-width: 960px) {
+  .home .home-container main {
+    width: 70% !important;
+  }
+}
+.home .home-container .topicos-container {
+  width: 100%;
+}
+.home .home-container .topicos-container md-card {
+  width: 100%;
+  background-color: rgba(255,255,255,0.8);
+}
+.home .home-container .topicos-container md-card md-list {
+  padding: 0px;
+}
+.home .home-container .topicos-container md-card md-list md-list-item {
+  cursor: pointer;
+  min-height: 70px;
+  padding-right: 0px;
+}
+.home .home-container .topicos-container md-card md-list md-list-item .md-button {
+  min-height: 70px;
+  max-height: 70px;
+  padding-left: 16px !important;
+  padding: 0px;
+  margin: 0px;
+}
+.home .home-container .topicos-container md-card md-list md-list-item.conHover {
+  background-color: #fff;
+  -webkit-transition: all 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: all 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -webkit-transition-delay: 0 ease-in-out;
+  transition-delay: 0 ease-in-out;
+}
+.home .home-container .topicos-container md-card md-list md-list-item .md-secondary-container .icon {
+  width: 70px;
+  min-height: 70px;
+  margin: 0px;
+  padding: 0px;
+  border-radius: 0px;
+  display: flex;
+  background-color: #deb887;
+}
+.home .home-container .topicos-container md-card md-list md-list-item .md-secondary-container .icon md-icon {
+  margin: auto;
+}
+.home .home-container .prospecto-content h3 {
+  text-align: center;
+}
+.home .home-container .prospecto-content form {
+  margin: 0px;
+}
+.home .home-container .prospecto-content form .md-button {
+  margin: 0px;
+  border-radius: 0px;
+  background-color: #deb887;
+}
+.servicio h1 {
+  color: #fff;
+}
+.paginacion {
+  width: 100%;
+}
+.paginacion .first,
+.paginacion .last {
+  background-color: #deb887;
+}
+.paginacion .first md-icon,
+.paginacion .last md-icon {
+  color: #fff;
+}
+.paginacion .previous,
+.paginacion .next {
+  background-color: #5d4329;
+}
+.paginacion .md-button {
+  padding: 0px;
+  margin: 0px;
+  border-radius: 0px;
+}

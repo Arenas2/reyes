@@ -1,0 +1,177 @@
+azul = #0B2347
+obsbure = #373435
+cafe = #5d4329
+cafeclaro = #deb887
+
+mobile = "(max-width: 600px)"
+compu = "(min-width: 960px)"
+
+ui-gmap-google-map
+    height 100%
+    width 400px
+    .angular-google-map
+        width 100%
+        height 400px
+        .angular-google-map-container
+            height 400px
+            width 100%
+
+transition(duracion, delay)
+    -webkit-transition all duracion cubic-bezier(0.445, 0.050, 0.550, 0.950)
+    transition all duracion cubic-bezier(0.445, 0.050, 0.550, 0.950)
+    -webkit-transition-delay delay ease-in-out
+    transition-delay delay ease-in-out
+
+animation(animation, duration = 1s)
+    -webkit-animation animation duration cubic-bezier(0.445, 0.050, 0.550, 0.950)
+    animation animation duration cubic-bezier(0.445, 0.050, 0.550, 0.950)
+    -webkit-transition all duration ease-in-out
+    -moz-transition all duration ease-in-out
+    -o-transition all duration ease-in-out
+    transition all duration ease-in-out
+
+.ng-hide-add.ng-hide-add-active
+    animation(fadeOut, 500ms)
+
+.ng-hide-remove.ng-hide-remove-active
+    animation(fadeIn, 500ms)
+
+.page
+    &.ng-enter
+        animation bounceInUp
+    &.ng-leave
+        animation fadeOut
+
+main
+    position absolute
+    @media compu
+        width 90%
+    @media mobile
+        width 100%
+
+header
+    .subnav
+        background-color black
+        div
+            display flex
+            h3
+                color white
+            md-icon
+                color burlywood
+                margin-right 5px
+    .nav
+        width 100%
+        margin-top 10px
+        .nav-content
+            md-icon.logo
+                height 100px
+                width 100px
+                color white
+                cursor pointer
+                &.conHover
+                    transform scale(.9)
+                    transition(300ms, 0)
+            .button-content
+                height 100px
+                display flex
+                .md-button
+                    margin auto
+                    color white
+                    &.active
+                        background-color white
+                        color black
+
+.principal
+    background-position center
+    background-size cover
+    background-repeat no-repeat
+    transition(500ms, 0)
+
+.servicios
+    .servicios-content
+        md-grid-list
+            margin-top 50px
+            md-grid-tile
+                cursor pointer
+                transition(500ms, 0)
+                &.sinHover
+                    background-color cafeclaro
+                &.conHover
+                    background-color cafe
+                    transform scale(.9)
+                md-icon
+                    color white
+                    height 60px
+                    width 60px
+                md-grid-tile-footer
+                    h2
+                        margin-left 30px
+
+
+.home
+    min-height calc(100vh - 270px)
+    .home-container
+        width 70%
+        main
+            @media compu
+                width 70% !important
+        .topicos-container
+            width 100%
+            md-card
+                width 100%
+                background-color rgba(255, 255, 255 .8)
+                md-list
+                    padding 0px
+                    md-list-item
+                        cursor pointer
+                        min-height 70px
+                        .md-button
+                            min-height 70px
+                            max-height 70px
+                            padding-left 16px !important
+                            padding 0px
+                            margin 0px
+                        &.conHover
+                            background-color white
+                            transition(200ms, 0)
+                        padding-right 0px
+                        .md-secondary-container
+                            .icon
+                                width 70px
+                                min-height 70px
+                                margin 0px
+                                padding 0px
+                                border-radius 0px
+                                display flex
+                                background-color cafeclaro
+                                md-icon
+                                    margin auto
+        .prospecto-content
+            h3
+                text-align center
+            form
+                margin 0px
+                .md-button
+                    margin 0px
+                    border-radius 0px
+                    background-color cafeclaro
+
+.servicio
+    h1
+        color white
+.nosotros
+    h1
+
+
+.paginacion
+    width 100%
+    .first, .last
+        background-color cafeclaro
+        md-icon
+            color white
+    .previous, .next
+        background-color cafe
+    .md-button
+        padding 0px
+        margin 0px
+        border-radius 0px
