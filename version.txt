@@ -1,1 +1,3 @@
-#1 DIC - Se modifico este archivo para meter textArea dentro del Admin en servicios
+#1 DIC - Ulises - Se modifico este archivo para meter textArea dentro del Admin en servicios
+#7 DIC - Cesar  - Se modifico datos del nav
+#8 DIC - Monica - Se modifico falta de letra en correo y se volvio a subir a google.
