@@ -28,39 +28,4 @@ app.controller('mainCtrl', function ($scope, $rootScope, $http, mdDialog, AuthSe
            sref: 'home'
     }];
 
-    var ary = ['img/background.jpeg', 'img/background1.jpg', 'img/background2.jpg'];
-
-    background(ary[0])
-    function background(url){
-
-        $scope.background =  url;
-
-    }
-
-    console.log(ary.length)
-
-    var timer;
-
-    var indice = 1;
-    var tiempo = 5000;
-
-    var sliderFunc = function() {
-
-        timer = $timeout(function() {
-
-            background( ary[   indice   ] )
-
-            indice >= (ary.length - 1) ? indice = 0 : indice++;
-
-            timer = $timeout(sliderFunc, tiempo);
-
-
-        }, tiempo);
-
-    };
-
-    sliderFunc();
-
-
-
 });

@@ -1,8 +1,8 @@
-.servicios(layout="row" layout-align="center center")
+.servicios.mp(layout="row" layout-align="center center")
     .servicios-content(flex="70" flex-md="70" flex-sm="70" flex-xs="100")
         //- h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        md-grid-list(md-cols="4" md-row-height="200px" md-gutter="2em")
-            md-grid-tile(md-colspan="2" md-rowspan="1" ng-repeat="servicio in servicios" ng-init="hover = false"  ng-mouseover="hover = true" ng-mouseleave="hover = false"  ng-class="hover ? 'conHover' : 'sinHover'" ng-click="irServicio(servicio)")
+        md-grid-list(md-cols="6" md-row-height="200px" md-gutter="1em")
+            md-grid-tile(md-colspan="2" md-colspan-xs="6" md-rowspan="1"  ng-repeat="servicio in servicios" ng-init="hover = false"  ng-mouseover="hover = true" ng-mouseleave="hover = false"  ng-class="hover ? 'conHover' : 'sinHover'" ng-click="irServicio(servicio)")
                 .img-content(layout="column")
                     md-icon(md-svg-icon="{{servicio.logo}}") 
                 md-grid-tile-footer

@@ -1,11 +1,36 @@
-.home(layout="row")
-	.home-container(flex="70")
-		//- md-card(layout="row")
-		//- 	md-button(ui-sref="home.topico") Topicos
-		//- 	md-button(ui-sref="home.prospecto") Prospectos
-		//- 	md-button(ui-sref="home.respuesta") Respuesta
-		md-card(layout="row" ng-show="prospecto")
-			md-button(ui-sref="home.topico" style="display:flex")
-				md-icon(style="margin:auto") keyboard_arrow_left
-			h4 Bienvenido {{prospecto.nombre}}, ahora puedes acceder a todas las respuestas.
-		main.page(ui-view="main")
+.home
+	section.main(layout="row" layout-align="center center" style="background-image : url(' {{background}} ')")
+		.content(flex="90" flex-md="90" flex-sm="90" flex-xs="90")
+			//- md-card(layout="row")
+			//- 	md-button(ui-sref="home.topico") Topicos
+			//- 	md-button(ui-sref="home.prospecto") Prospectos
+			//- 	md-button(ui-sref="home.respuesta") Respuesta
+			h1 Respondemos tus preguntas
+			md-card(layout="row" ng-show="prospecto")
+				md-button(ui-sref="home.topico" style="display:flex")
+					md-icon(style="margin:auto") keyboard_arrow_left
+				h4 Bienvenido {{prospecto.nombre}}, ahora puedes acceder a todas las respuestas.
+			main.page(ui-view="main")
+
+	section.info(layout="row" layout-align="center center")
+		.content(flex="70" flex-xs="90" flex-sm="90" layout="column")
+			p Es un despacho Jurídico comprometido con el deber profesional, consolidado por una estructura de Licenciados en Derecho, que se destaca por su honestidad, innovación, dinamismo, y amplia experiencia en las diversas áreas del Derecho.
+			.content(layout="row" layout-align="space-around center" layout-xs="column" layout-sm="column")
+				.valor(flex)
+					h1 MISIÓN
+					p Dar un servicio de asesoría y defensa legal objetivo y honesto.
+				.valor(flex)
+					h1 OBJETIVO
+					p Brindar un servicio legal bajo los principios de honestidad, profesionalismo, eficiencia y objetividad.
+				.valor(flex)
+					h1 VISIÓN
+					p Aportar a la sociedad una actividad profesional que se sume al equilibrio en la justicia y el orden social.
+					
+	section.slogan(layout="row" layout-align="center center")
+		.content(flex="70" flex-xs="90" flex-sm="90"  layout="row" layout-xs="column")
+			.foto
+				img(src="img/german.png")
+			.parrafo
+				h4 German Reyes Reyes
+				p Abogado especialista en materia penal y Derecho Militar, especializado en el Instituto Nacional de Ciencias Penales (INACIPE) y en el United States Defense Institute of Internacional Legal Studies.
+		

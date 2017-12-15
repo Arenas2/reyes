@@ -1,6 +1,6 @@
 var app = angular.module('myapp');
 
-app.controller('topicosCtrl', function($rootScope, $window,  $scope, $mdDialog, mdDialog, $state, $stateParams, Topicos, Servicios) {
+app.controller('topicosCtrl', function($rootScope, $window,  $scope, $mdDialog, mdDialog, $state, $stateParams, Topicos, Servicios, $analytics) {
 
     $rootScope.seccion = 'Topicos'
     self = this;
@@ -73,7 +73,16 @@ app.controller('topicosCtrl', function($rootScope, $window,  $scope, $mdDialog, 
 
     $scope.avanzar = function(topico){
 
-        $rootScope.prospecto === undefined ? $state.go('home.prospecto', {topico : topico}) : $state.go('home.respuesta', {topico : topico})
+        // $analytics.eventTrack('interes', {  category: 'interes', label: topico.nombre });
+
+        $rootScope.prospecto === undefined ? (
+            $state.go('home.prospecto'),
+            $rootScope.topico = topico
+
+        ) : (
+            $state.go('home.respuesta'),
+            $rootScope.topico = topico
+        )
 
     }
 

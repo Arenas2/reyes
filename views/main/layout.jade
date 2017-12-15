@@ -7,12 +7,12 @@ block moreHead
 
 block content
 
-	.principal(ng-controller="mainCtrl as mainctrl" style="background-image : url(' {{background}} ')")
+	.principal(ng-controller="mainCtrl as mainctrl")
 		header
 			include ../partials/nav
 		div(layout="row" layout-align="center center")
-			.centro(flex="90" flex-md="100" flex-sm="100" flex-xs="100")
-				main(ui-view="main" class="page")
+			.centro
+				main(ui-view="main" class="page" autoscroll="true")
 		md-divider
 		footer(layout="row" layout-align="space-around center")
 			include ../partials/footer
